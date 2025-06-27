@@ -114,12 +114,14 @@ export default function Home() {
       <a href="#faqs" className="text-gray-300 hover:text-cyan-400 text-sm xl:text-base transition-colors duration-300">
         FAQs
       </a>
+      <a href="https://wa.me/917007882824?text=Hi!%20I'm%20interested%20in%20the%20Skill%20Growth%20%26%20Earn%20from%20Home.%20Please%20share%20more%20details%20about%20the%20webinar.%20Thanks!">
       <button
         onClick={() => document.getElementById('registration').scrollIntoView({ behavior: 'smooth' })}
         className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 px-4 py-2 rounded text-white text-sm xl:text-base transition-all duration-300 shadow-md"
       >
-        Register Now
+        WhatsApp Now
       </button>
+      </a>
     </nav>
 
     {/* Mobile Button */}
@@ -151,12 +153,14 @@ export default function Home() {
       <p className="text-white/90 text-lg sm:text-xl lg:text-2xl mb-8 max-w-xl">
         Join industry experts for an immersive experience designed to elevate your skills and career.
       </p>
-      <button 
+      <a href="https://wa.me/917007882824?text=Hi!%20I'm%20interested%20in%20the%20Skill%20Growth%20%26%20Earn%20from%20Home.%20Please%20share%20more%20details%20about%20the%20webinar.%20Thanks!">
+      <button
         onClick={() => document.getElementById('registration').scrollIntoView({ behavior: 'smooth' })}
         className="bg-pink-500 hover:bg-pink-600 px-6 sm:px-8 py-3 rounded-lg text-white font-semibold text-base sm:text-lg transition-colors shadow-lg"
       >
-        Register Now
+        WhatsApp Now
       </button>
+      </a>
     </div>
 
     {/* Right Column: Image */}
@@ -210,6 +214,42 @@ export default function Home() {
   </div>
 </section>
 
+
+<section className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden px-4 sm:px-6 py-12">
+  {/* Floating Starry Background */}
+  <div className="absolute inset-0 z-0 bg-[url('/stars-bg.png')] bg-cover opacity-10 animate-pulse"></div>
+
+  {/* Central Glow Effect */}
+  <div className="absolute w-[1000px] h-[1000px] bg-[radial-gradient(circle,_#ff00cc,_#3333ff,_#00ffff)] blur-[120px] opacity-20 z-0"></div>
+
+  {/* Content */}
+  <div className="relative z-10 flex flex-col items-center text-center max-w-5xl space-y-6">
+    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+      The Next Worth
+    </h1>
+    <p className="text-lg sm:text-xl text-gray-300 max-w-2xl">
+      Your journey from dreams to reality starts here! Come now and reshape your future with the strategies that pay.
+    </p>
+
+    {/* Video Player */}
+    <div className="w-full max-w-4xl mt-6 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+      <video
+        src="/vdo1.png"
+        autoPlay
+        loop
+        muted
+        playsInline
+        controls
+        className="w-full h-auto"
+      />
+    </div>
+
+    {/* Button */}
+    <button className="mt-8 bg-pink-500 hover:bg-pink-600 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all">
+      WhatsApp Now!
+    </button>
+  </div>
+</section>
 
 
       {/* What You'll Learn */}
@@ -368,16 +408,84 @@ export default function Home() {
   </div>
 </section>
 
+{/* Registration  */}
+     <section id="registration" className="relative py-16 sm:py-24 overflow-hidden bg-[#0f0f0f]">
+  {/* Glowing Hue Background */}
+  <div className="absolute inset-0 z-0 flex items-center justify-center">
+    <div className="w-[900px] h-[900px] bg-[radial-gradient(circle,_#ff00cc,_#3333ff,_#00ffff)] blur-[120px] opacity-30"></div>
+  </div>
+  <div className="absolute top-[-120px] left-[-120px] w-[300px] h-[300px] bg-[radial-gradient(circle,_#9333ea,_transparent)] blur-[100px] opacity-30 z-0"></div>
+  <div className="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-[radial-gradient(circle,_#ff00cc,_transparent)] blur-[100px] opacity-30 z-0"></div>
 
-      {/* Registration */}
-      <section id="registration" className="py-12 sm:py-16">
-        <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Registration</h2>
-          <button className="bg-pink-500 hover:bg-pink-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-white font-semibold text-sm sm:text-base transition-colors">
-            Register Now
-          </button>
-        </div>
-      </section>
+  {/* Main Content */}
+  <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
+    <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">Registration</h2>
+<a href="https://wa.me/917007882824?text=Hi!%20I'm%20interested%20in%20the%20Skill%20Growth%20%26%20Earn%20from%20Home.%20Please%20share%20more%20details%20about%20the%20webinar.%20Thanks!">
+    <button className="relative px-10 py-4 text-white font-semibold text-lg rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105
+      bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+      animate-[floatGlow_1s_ease-in-out_infinite]
+      before:content-[''] before:absolute before:inset-0 before:rounded-full before:blur-[40px] before:bg-gradient-to-r before:from-pink-500 before:via-purple-500 before:to-blue-500 before:opacity-80 before:z-[-1]">
+      WhatsApp Now
+    </button>
+    </a>
+  </div>
+
+  {/* Custom animation */}
+  <style jsx>{`
+    @keyframes floatGlow {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-6px) scale(1.03);
+      }
+    }
+  `}</style>
+</section>
+
+
+
+      <footer className="bg-gray-900relative overflow-hidden text-white py-12 px-6 sm:px-12">
+  {/* Glowing background elements */}
+  <div className="absolute top-[-150px] left-[-150px] w-[300px] h-[300px] bg-[radial-gradient(circle,_#00ffff,_#3333ff,_transparent)] blur-[120px] opacity-20 z-0"></div>
+  <div className="absolute bottom-[-150px] right-[-150px] w-[300px] h-[300px] bg-[radial-gradient(circle,_#ff00cc,_#00ffff,_transparent)] blur-[120px] opacity-20 z-0"></div>
+
+  {/* Main Content */}
+  <div className="relative z-10 container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+    {/* Left - Branding & Tagline */}
+    <div className="text-center md:text-left max-w-md">
+      <h2 className="text-2xl sm:text-3xl font-bold text-white">
+        The Next Worth <span className="text-yellow-400">👑</span>
+      </h2>
+      <p className="mt-2 text-gray-300 text-sm sm:text-base">
+        A brand built with one goal — to make <span className="text-pink-500 font-semibold">financial freedom</span> simple, real, and accessible for those ready to grow.
+      </p>
+    </div>
+
+    {/* Right - Social Links */}
+    <div className="text-center md:text-right">
+      <h3 className="text-lg font-bold mb-2 text-white">Social Media</h3>
+      <ul className="space-y-1">
+        <li>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500 transition">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition">
+            YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Optional: Bottom border */}
+  <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+    © {new Date().getFullYear()} The Next Worth. All rights reserved.
+  </div>
+</footer>
+
     </div>
   );
 }
